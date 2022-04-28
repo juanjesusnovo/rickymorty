@@ -5,7 +5,14 @@
   list-style: none
 body
   background-image: url("img/fondo.jpg")
-
+@font-face
+  font-family: rickymorty
+  src: url("fonts/get_schwifty.ttf")
+@font-face
+  font-family: mina
+  src: url("fonts/Mina-Regular.ttf")
+a:link, a:visited, a:active
+  text-decoration: none
 // HEADER
 header
   width: 100%
@@ -14,7 +21,7 @@ header
   background-color: #262C3A
   display: flex
   align-items: center
-  justify-content: space-around
+  justify-content: space-between
 .logoHeader
   width: 75px
 .photoHeader
@@ -30,7 +37,7 @@ header
   display: flex
   width: 100%
   font-size: 25px
-  font-family: sans-serif
+  font-family: mina
   justify-content: space-between
 .iconsHeader
   display: flex
@@ -38,3 +45,95 @@ header
   justify-content: space-between
   width: 80px
   font-size: 25px
+
+//Footer
+footer
+  padding: 10px
+  width: 100%
+  height: 10vh
+  background-color: #262C3A
+  display: flex
+  align-items: center
+  justify-content: space-between
+.logoFooter
+  width: 150px
+.mediaIcons
+  display: flex
+  align-items: center
+  justify-content: space-around
+.iconsFooter
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  color: white
+  font-size: 25px
+  column-gap: 50px
+.navFooter
+  width: 40%
+  display: flex
+  justify-content: space-around
+  flex-direction: row
+  column-gap: 150px
+  color: white
+.buttonsFooter
+  width: 100%
+  display: flex
+  justify-content: space-between
+  column-gap: 60px
+  font-size: 25px
+  font-family: mina
+
+//Página de Inicio (Personajes del Inicio)
+.main-inix
+  min-height: 80vh
+  display: flex
+  flex-direction: column
+.logoRyM
+  width: 60%
+  margin: auto
+
+.section-init
+  display: flex
+  flex-direction: row
+  min-height: 40vh
+  width: 100%
+  justify-content: space-around
+.charactersInit
+  align-items: center
+  justify-content: space-around
+  width: 30%
+  display: flex
+  height: 30vh
+  background-color: #707070
+.figure-init
+  width: 50%
+  text-align: center
+.character
+  width: 200px
+  height: 170px
+  text-align: center
+  margin: auto
+.name
+  color: white
+  text-align: center
+  font-size: 20px
+  font-family: rickymorty
+.info
+  font-size: 20px
+  color: white
+  width: 50%
+  border: black
+  font-family: mina
+
+// Lista de Personajes
+.section-char
+  display: flex
+  min-height: 25vh
+  width: 100%
+  justify-content: space-evenly
+.characterList
+  display: flex
+  align-items: center
+.moreInfo
+  font-family: rickymorty
+  font-size: 20px

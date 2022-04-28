@@ -9,11 +9,25 @@ body {
   background-image: url("fondo.d749cfc8.jpg");
 }
 
+@font-face {
+  font-family: rickymorty;
+  src: url("get_schwifty.44c43d3b.ttf");
+}
+
+@font-face {
+  font-family: mina;
+  src: url("Mina-Regular.2ab87585.ttf");
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   height: 10vh;
   background-color: #262c3a;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   display: flex;
@@ -39,7 +53,7 @@ header {
 .buttonsHeader {
   width: 100%;
   justify-content: space-between;
-  font-family: sans-serif;
+  font-family: mina;
   font-size: 25px;
   display: flex;
 }
@@ -50,6 +64,125 @@ header {
   justify-content: space-between;
   font-size: 25px;
   display: flex;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #262c3a;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.logoFooter {
+  width: 150px;
+}
+
+.mediaIcons {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.iconsFooter {
+  color: #fff;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 50px;
+  font-size: 25px;
+  display: flex;
+}
+
+.navFooter {
+  width: 40%;
+  color: #fff;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 150px;
+  display: flex;
+}
+
+.buttonsFooter {
+  width: 100%;
+  justify-content: space-between;
+  column-gap: 60px;
+  font-family: mina;
+  font-size: 25px;
+  display: flex;
+}
+
+.main-inix {
+  min-height: 80vh;
+  flex-direction: column;
+  display: flex;
+}
+
+.logoRyM {
+  width: 60%;
+  margin: auto;
+}
+
+.section-init {
+  min-height: 40vh;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  display: flex;
+}
+
+.charactersInit {
+  width: 30%;
+  height: 30vh;
+  background-color: #707070;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.figure-init {
+  width: 50%;
+  text-align: center;
+}
+
+.character {
+  width: 200px;
+  height: 170px;
+  text-align: center;
+  margin: auto;
+}
+
+.name {
+  color: #fff;
+  text-align: center;
+  font-family: rickymorty;
+  font-size: 20px;
+}
+
+.info {
+  color: #fff;
+  width: 50%;
+  border: none;
+  font-family: mina;
+  font-size: 20px;
+}
+
+.section-char {
+  min-height: 25vh;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.characterList {
+  align-items: center;
+  display: flex;
+}
+
+.moreInfo {
+  font-family: rickymorty;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=index.c9e1972b.css.map */
