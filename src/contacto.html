@@ -16,29 +16,27 @@
         <img class="photoHeader" src="img/header.jpg">
         <ul class="iconsHeader">
             <li><i class="fas fa-search"></i></i></li>
-            <li><i class="fas fa-user-circle"></i></li>
+            <li><a href="sesion.html"><i class="fas fa-user-circle"></i></a></li>
         </ul>
     </header>
     <main class="main-contacto">
-        <section class="section-contacto">
-            <img class="logoRyMc" src="img/logo3.png">
-            <article class="formu">
-                <form>
-                    <label for="nombre">
-                        <input type="text" id="nombre" name="nombre" required>
-                    </label>
-                    <label for="correo">
-                        <input type="text" id="correo" name="correo" required>
-                    </label>
-                    <label for="tfno">
-                        <input type="text" id="tfno" name="Teléfono" required>
-                    </label>
-                    <label for="cuentanos">
-                        <input type="text" id="cuentanos" name="cuentanos" required>
-                    </label>
-                </form>
-            </article>
-        </section>
+        <img class="logoRyMc" src="img/logo3.png">
+        <form class="formularioC">
+            <div class="form1">
+                <label for="nombre">
+                    <input class="contacto" type="text" id="nombre" name="nombre" value="Nombre" required>
+                </label>
+                <label for="correo">
+                    <input class="contacto" type="text" id="correo" name="correo" value="Correo" required>
+                </label>
+                <label for="tfno">
+                    <input class="contacto" type="text" id="tfno" name="teléfono" value="Teléfono" required>
+                </label>
+            </div>
+            <div class="form2">
+                <textarea type="text" id="cuentanos" name="cuentanos" required>Cuéntanos tu problema</textarea>
+            </div>
+        </form>
     </main>
     <footer>
         <div class="mediaIcons">

@@ -300,23 +300,85 @@ footer {
 
 .main-contacto {
   min-height: 80vh;
+  flex-wrap: wrap;
   display: flex;
 }
 
-.section-contacto {
+.formularioC {
+  text-align: center;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 100px;
   display: flex;
-}
-
-.formu {
-  width: 100%;
 }
 
 .logoRyMc {
+  width: 35%;
+  margin: auto;
+}
+
+.form1 {
+  width: 50%;
+  flex-direction: column;
+  align-items: end;
+  padding: 30px;
+  display: flex;
+}
+
+.form2 {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+}
+
+.contacto {
+  width: 50vh;
+  height: 30px;
+  background-color: gray;
+  margin-bottom: 40px;
+}
+
+textarea {
+  width: 50vh;
+  height: 180px;
+  background-color: gray;
+}
+
+.main-sesion {
+  min-height: 80vh;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.formularioSesion {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.logoRyMs {
   width: 50%;
   margin: auto;
+}
+
+.sesion {
+  width: 70vh;
+  height: 30px;
+  color: #fff;
+  background-color: #707070;
+  margin-bottom: 10px;
+  font-family: mina;
+  font-size: 1.3rem;
+}
+
+.boton {
+  width: 15%;
+  height: 3vh;
+  color: #fff;
+  background-color: #707070;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=index.c9e1972b.css.map */
