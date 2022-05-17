@@ -334,14 +334,20 @@ footer {
 .contacto {
   width: 50vh;
   height: 30px;
+  color: #fff;
   background-color: gray;
   margin-bottom: 40px;
+  font-family: mina;
+  font-size: 1.3rem;
 }
 
 textarea {
   width: 50vh;
   height: 180px;
+  color: #fff;
   background-color: gray;
+  font-family: mina;
+  font-size: 1.3rem;
 }
 
 .main-sesion {
