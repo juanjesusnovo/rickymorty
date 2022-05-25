@@ -190,7 +190,7 @@ footer
   margin-top: 20px
   margin-bottom: 20px
 .datos-temp
-  font-size: 20px
+  font-size: 18px
   font-family: mina
   color: white
 
@@ -205,6 +205,7 @@ footer
 .characterExt
   display: flex
   justify-content: space-evenly
+  flex-wrap: wrap
 .photoC
   width: 40%
   padding: 30px
@@ -241,13 +242,16 @@ footer
   width: 50%
   flex-direction: column
   align-items: end
-  padding: 30px
+  padding: 10px
+.form1 label
+  width: 100%
+
 .form2
   padding: 30px
   display: flex
   width: 50%
 .contacto
-  width: 50vh
+  width: 100%
   height: 30px
   margin-bottom: 40px
   background-color: gray
@@ -291,10 +295,53 @@ textarea
   background-color: #707070
   border-radius: 10px
 
+//ERROR 404
+.Error
+  min-height: 80vh
+
+.ErrorS
+  display: flex
+  justify-content: center
+  align-items: center
+h1
+  margin-top: 50px
+  color: greenyellow
+  font-family: rickymorty
+  font-size: 100px
+.portal
+  width: 500px
+  height: 500px
+  animation: move 4s ease infinite
+
+@keyframes move
+  0%
+    transform: translateX(40vw) rotateZ(180deg)
+  50%
+    transform: translateX(30vw) rotateZ(360deg)
+  100%
+    transform: translateX(40vw) rotateZ(180deg)
+
 
 //RESPONSIVE
+@media (max-width: 1600px)
+  .photoC
+    padding: 10px
+  .infoExtended
+    font-size: 20px
+
 @media (max-width: 1460px)
   .buttonsFooter
+    font-size: 20px
+  .infoP
+    font-size: 17px
+  .characterL
+    width: 150px
+    height: 150px
+
+@media (max-width: 1324px)
+  .infoP
+    font-size: 15px
+  .name
     font-size: 20px
 
 @media  (max-width: 1280px)
@@ -303,11 +350,38 @@ textarea
     height: 130px
   .info
     font-size: 18px
+  .name
+    font-size: 17px
 
 @media (max-width: 1232px)
   .navFooter
     width: 50%
 
+@media (max-width: 1150px)
+  .characterL
+    width: 130px
+    height: 130px
+  .characterList
+    width: 49%
+    padding: 10px
+  .datos
+    width: 60%
+
+
+@media (max-width: 1105px)
+  .characterList
+    padding: 5px
+
+@media (max-width: 1084px)
+  .characterList
+    height: 20vh
+  .temporada
+    width: 160px
+    height: 260px
+
+@media (max-width: 997px)
+  .infoP
+    font-size: 13px
 
 @media (max-width: 990px)
   .section-init
@@ -334,9 +408,100 @@ textarea
     font-size: 30px
   .buttonsFooter
     font-size: 25px
+  .formularioC
+    padding: 10px
+
+@media (max-width: 970px)
+  .photoC
+    width: 650px
+  .datos
+    width: 100%
+
+@media (max-width: 905px)
+  .characterList
+    width: 80%
+    margin-bottom: 10px
+  .infoP
+    font-size: 17px
+
+@media (max-width: 870px)
+  .datos-temps
+    font-size: 17px
+  .form1
+    width: 100%
+  .form2
+    width: 100%
+  .form2 textarea
+    width: 100%
+
+
+@media (max-width: 833px)
+  .temps
+    width: 45%
+    margin-bottom: 10px
 
 @media (max-width: 820px)
   header
     justify-content: space-evenly
   .buttonsHeader
     font-size: 20px
+
+@media (max-width: 725px)
+  .photoC
+    width: 550px
+
+@media (max-width: 700px)
+  .sesion
+    width: 100%
+  .formularioSesion label
+    width: 80%
+
+@media (max-width: 668px)
+  .infoP
+    font-size: 15px
+
+@media (max-width: 660px)
+  .photoHeader
+    display: none
+  .info
+    font-size: 18px
+  .character
+    width: 170px
+    height: 150px
+
+@media (max-width: 630px)
+  .infoP
+    font-size: 13px
+  .name
+    font-size: 15px
+
+@media (max-width: 615px)
+  .buttonsFooter
+    font-size: 20px
+  .temps
+    width: 80%
+  .datos-temp
+    font-size: 20px
+
+@media (max-width: 600px)
+  .charactersInit
+    width: 90%
+  .buttonsHeader
+    font-size: 17px
+
+@media(max-width: 560px)
+  .photoC
+    width: 450px
+
+@media (max-width: 545px)
+  .characterL
+    width: 110px
+    height: 110px
+  .name
+    font-size: 13px
+
+@media (max-width: 525px)
+  .buttonsFooter
+    font-size: 15px
+  .iconsHeader
+    font-size: 23px
