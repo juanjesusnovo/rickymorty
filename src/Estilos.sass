@@ -28,26 +28,38 @@ header
 .logoHeader
   width: 75px
 .photoHeader
-  width: 255px
+  width: 13.5%
 .navHeader
   width: 50%
   display: flex
   justify-content: space-around
   flex-direction: row
   column-gap: 150px
-  color: white
 .buttonsHeader
   display: flex
   width: 100%
   font-size: 25px
   font-family: mina
   justify-content: space-between
+  a
+    color: white
+    transition: color 350ms ease
+  a:hover
+    color: greenyellow
+    transition: color 350ms ease
+
 .iconsHeader
   display: flex
   color: white
   justify-content: space-between
   width: 80px
   font-size: 25px
+  a
+    color: white
+    transition: color 350ms ease
+  a:hover
+    color: greenyellow
+    transition: color 350ms ease
 
 //Footer
 footer
@@ -148,7 +160,6 @@ footer
   background-color: #70707080
 .characterL
   width: 100%
-  width: 170px
   height: 170px
   margin-top: 10px
   margin-bottom: 10px
@@ -244,7 +255,7 @@ footer
   align-items: end
   padding: 10px
 .form1 label
-  width: 100%
+  width: 65%
 
 .form2
   padding: 30px
@@ -446,6 +457,10 @@ h1
   .buttonsHeader
     font-size: 20px
 
+@media (max-width: 750px)
+  .photoHeader
+    display: none
+
 @media (max-width: 725px)
   .photoC
     width: 550px
@@ -490,8 +505,13 @@ h1
     font-size: 17px
 
 @media(max-width: 560px)
+  .logoHeader
+    width: 70px
+    height: 71px
   .photoC
     width: 450px
+  .buttonsHeader
+    display: flex
 
 @media (max-width: 545px)
   .characterL
