@@ -332,6 +332,58 @@ h1
   100%
     transform: translateX(40vw) rotateZ(180deg)
 
+.acordeon
+  font-family: rickymorty
+  font-size: 20px
+  background-color: gray
+  color: greenyellow
+  padding: 20px
+  width: 100%
+  transition: all 1s ease
+.acordeon:hover
+  background-color: beige
+  color: black
+.mostrar
+  display: flex
+  background-color: #707070
+  flex-wrap: wrap
+  animation: trans 1s ease
+  p
+    font-family: mina
+    font-size: 25px
+    color: greenyellow
+    width: 30%
+
+
+@keyframes trans
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.ocultar
+  display: none
+  background-color: #707070
+  flex-wrap: wrap
+
+  p
+    font-family: mina
+    font-size: 25px
+    color: greenyellow
+    width: 30%
+
+.ocultando
+  animation: transOc 1s ease
+
+@keyframes transOc
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+.rickAcordeon
+  width: 400px
+  padding: 40px
 
 //RESPONSIVE
 @media (max-width: 1600px)

@@ -28,6 +28,13 @@
             </h1>
         </section>
         <img class="portal" src="img/portal1.png" alt="portal">
+        <button class="acordeon" onclick="acordeon()">Rick Sánchez</button>
+        <div class="acordeonDiv ocultar">
+            <img class="rickAcordeon" src="img/rick.jpg">
+            <p>
+                Científico alcohólico misántropo conocido por su comportamiento temerario, nihilista y su personalidad pesimista.
+            </p>
+        </div>
     </main>
     <footer>
         <div class="mediaIcons">
@@ -47,3 +54,18 @@
         </nav>
     </footer>
 </build>
+<script>
+    const acordeonDiv = document.querySelector(".acordeonDiv")
+    function acordeon(){
+        if(acordeonDiv.classList.contains("ocultar")){
+            acordeonDiv.classList.remove("ocultando")
+            acordeonDiv.classList.remove("ocultar")
+            acordeonDiv.classList.add("mostrar")
+        }
+        else{
+            acordeonDiv.classList.add("ocultando")
+            acordeonDiv.classList.remove("mostrar")
+            acordeonDiv.classList.add("ocultar")
+        }
+    }
+</script>
